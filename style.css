@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100fr);
+  grid-template-rows: repeat(3, 3fr);
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border: 1px solid black;
+}
+.reset {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.game-button {
+  border: 1px solid black;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.game-button.animate-text {
+  animation: fadeEffect 0.43s ease infinite; /* 1 saniyelik fade animasyonu */
+}
+
+@keyframes fadeEffect {
+  0% {
+    color: black; /* Metin normal rengi */
+  }
+  50% {
+    color: lightgray; /* Metin soluk rengi */
+  }
+  100% {
+    color: black; /* Metin geri normal rengi */
+  }
+}
